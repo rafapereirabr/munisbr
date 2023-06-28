@@ -1,15 +1,15 @@
 Type: Package
 Package: munisbr
-Title: Download Official Socioeconomic Data of Brazilian Municipalities
+Title: Official Socioeconomic Data of Brazilian Municipalities
 Version: 0.0.1
 Authors@R: c(
     person("Rafael H. M.", "Pereira", , "rafa.pereira.br@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-2125-7465"))
            )
-Description: Downloads  official data of socioeconomic and population 
+Description: Downloads official data of socioeconomic and population 
              characteristics of Brazilian municipalities. The package offers a 
              set of convenient functions to download IBGE's data through the 
-             "sidrar package.
+             "sidrar" package.
 License: MIT + file LICENSE
 URL: https://github.com/ipeaGIT/munisbr,
     https://ipeagit.github.io/munisbr/

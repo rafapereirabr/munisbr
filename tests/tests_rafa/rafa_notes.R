@@ -1,6 +1,10 @@
 
 #' docs api
 #' https://apisidra.ibge.gov.br/home/ajuda
+#' 
+#' 
+#' git
+#' https://github.com/rpradosiqueira/sidrar
 
 
 
@@ -10,19 +14,26 @@
 a <-  sidrar::search_sidra('nascimentos')
 a[a %like% 'Residente']
 
-b <-  sidrar::info_sidra(192)
+b <-  sidrar::info_sidra(2609)
 c <- b$variable
 
 
 
-df_raw2 <- sidrar::get_sidra(period = year,
-                             x = 192, # table,
-                             variable = 1000217,
+df_raw <- sidrar::get_sidra(period = year,
+                             x = 2609, # table,
+                              variable = 217,
                              geo = "City", 
-                             format = 3, classific = "c2"
+                             format = 3
                              )
-head(df_raw2)
-1000217 
+head(df_raw)
+
+
+
+##### tabelas disponiveis ------------------------
+
+https://sidra.ibge.gov.br/Acervo?nivel=6&unidade=1100015#/S/Q
+
+
 ##### Coverage ------------------------
 # library(uci)
 library(testthat)

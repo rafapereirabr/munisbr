@@ -30,7 +30,10 @@ read_population <- function(year){
                                 format = 3
                                 )
                               )
-
+  
+  # ceck result
+  if (nrow(df_raw) == 0) {stop("Data not available for this year.")}
+  
   # rename muni columns
   df <- rename_muni_columns(df_raw)
   data.table::setnames(df, "Valor", "population")
